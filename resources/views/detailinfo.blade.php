@@ -8,7 +8,7 @@
     @foreach ($detail as $details)
     <meta name="description" content="{{$details->resume}}">
     <title>{{$details->Titre}}</title>
-    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="{{asset('assets/fonts/font-awesome.min.css')}}">
@@ -29,7 +29,10 @@
             </ul>
         </div>
     </nav>
-    <header class="masthead" style="background-image:url('{{asset('public/uploads/')}}/{{$details->image}}');">
+    @php
+        $path = 'public/uploads/'.{{$details->image}};
+    @endphp
+    <header class="masthead" style="background-image:url('{{asset($path);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
