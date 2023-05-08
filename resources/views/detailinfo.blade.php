@@ -30,7 +30,7 @@
         </div>
     </nav>
     @php
-        $path = 'public/uploads/'.{{$details->image}};
+        $path = 'public/uploads/'.$details->image;
     @endphp
     <header class="masthead" style="background-image:url('{{asset($path)}}');">
         <div class="overlay"></div>
