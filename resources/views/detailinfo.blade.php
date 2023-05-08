@@ -8,14 +8,14 @@
     @foreach ($detail as $details)
     <meta name="description" content="{{$details->resume}}">
     <title>{{$details->Titre}}</title>
-    <link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-    <link rel="stylesheet" href="{{asset('assets/fonts/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/fonts/ionicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Contact-Form-Clean.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Footer-Basic.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Login-Form-Clean.css')}}">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
 </head>
 
 <body>
@@ -29,10 +29,7 @@
             </ul>
         </div>
     </nav>
-    @php
-        $path = 'public/uploads/'.$details->image;
-    @endphp
-    <header class="masthead" style="background-image:url('{{asset($path)}}');">
+    <header class="masthead" style="background-image:url('public/uploads/{{$details->image}}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -71,8 +68,8 @@
             </div>
         </div>
     </footer>
-    <script src="{{asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/js/clean-blog.js')}}"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/clean-blog.js"></script>
 </body>
 
 </html>
