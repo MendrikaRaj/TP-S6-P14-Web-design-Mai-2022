@@ -29,7 +29,7 @@
             </ul>
         </div>
     </nav>
-    <header class="masthead" style="background-image:url('{{asset('images')}}/{{$details->image}}');">
+    <header class="masthead" style="background-image:url('{{asset('images'/)}}/{{$details->image}}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
