@@ -20,16 +20,17 @@ class ArticleController extends Controller
             'Contenu' => 'required'
         ]);
 
-        $file = $request->file('Image');
-        $extension = $file->getClientOriginalExtension();
-        $filename =time().'.'.$extension;
-        $file->move(public_path('images'),$filename);
+        // $file = $request->file('Image');
+        // $extension = $file->getClientOriginalExtension();
+        // $filename =time().'.'.$extension;
+        // $file->move(public_path('images'),$filename);
 
         $article = new Article();
         $article->Titre = $request->input('Titre');
         $article->Auteur = $request->input('Auteur');
         $article->resume = $request->input('resume');
-        $article->image = $filename;
+        $article->image = '123456789.jpg';
+        // $article->image = $filename;
         $article->contenu = $request->input('Contenu');
         $res = $article->save();
 
