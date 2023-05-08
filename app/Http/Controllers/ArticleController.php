@@ -23,7 +23,7 @@ class ArticleController extends Controller
         $file = $request->file('Image');
         $extension = $file->getClientOriginalExtension();
         $filename =time().'.'.$extension;
-        $file->storeAs('public/',$filename);
+        $file->move('public/',$filename);
 
         $article = new Article();
         $article->Titre = $request->input('Titre');
