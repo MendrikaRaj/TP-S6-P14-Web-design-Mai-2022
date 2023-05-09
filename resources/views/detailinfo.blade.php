@@ -29,7 +29,7 @@
             </ul>
         </div>
     </nav>
-    <header class="masthead" style="background-image:url('public/uploads/')}}/{{$details->image}}');">
+    <header class="masthead" style="background-image:url('https://nondescript-fear-production.up.railway.app/public/uploads/')}}/{{$details->image}}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
