@@ -8,14 +8,14 @@
     @foreach ($detail as $details)
     <meta name="description" content="{{$details->resume}}">
     <title>{{$details->Titre}}</title>
-    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/public/assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/public/assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/public/assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/public/assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/public/assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://nondescript-fear-production.up.railway.app/assets/css/Login-Form-Clean.css">
 </head>
 
 <body>
@@ -68,8 +68,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://nondescript-fear-production.up.railway.app/public/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://nondescript-fear-production.up.railway.app/public/assets/js/clean-blog.js"></script>
+    <script src="https://nondescript-fear-production.up.railway.app/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://nondescript-fear-production.up.railway.app/assets/js/clean-blog.js"></script>
 </body>
 
 </html>
