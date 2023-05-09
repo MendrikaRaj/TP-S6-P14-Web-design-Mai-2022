@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
-        URL::forceScheme('https');
+        // URL::forceScheme('https');
     }
 
     /**
